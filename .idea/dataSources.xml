@@ -7,5 +7,15 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-54-163-234-44.compute-1.amazonaws.com/d7jvp9njdlltb3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="NewPersistenceUnit/Hibernate" uuid="6051223a-7c7f-4be8-b654-6d4aa04b7c1f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/Khayal Farziyev/IdeaProjects/Charity/META-INF/persistence.xml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-163-234-44.compute-1.amazonaws.com/d7jvp9njdlltb3</jdbc-url>
+    </data-source>
   </component>
 </project>
