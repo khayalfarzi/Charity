@@ -4,6 +4,7 @@
     <persistence-unit name="persistenceUnit">
         <class>com.company.entity.UsersEntity</class>
         <class>com.company.entity.CategoriesEntity</class>
+        <class>com.company.entity.PostsEntity</class>
         <properties>
             <property name="hibernate.connection.url"
                       value="jdbc:postgresql://ec2-54-163-234-44.compute-1.amazonaws.com/d7jvp9njdlltb3"/>

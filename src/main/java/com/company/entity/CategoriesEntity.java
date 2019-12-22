@@ -1,8 +1,11 @@
 package com.company.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Objects;
 
+@Data
 @Entity
 @Table(name = "categories", schema = "charity", catalog = "d7jvp9njdlltb3")
 public class CategoriesEntity {
