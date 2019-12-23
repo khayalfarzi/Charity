@@ -22,4 +22,8 @@ public class PostService {
     public Optional<PostsEntity> findById(Long id) {
         return postsRepository.findById(id);
     }
+
+    public void insertPost(PostsEntity entity) {
+        postsRepository.save(entity);
+    }
 }
