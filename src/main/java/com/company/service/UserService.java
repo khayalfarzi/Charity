@@ -22,4 +22,19 @@ public class UserService {
         return usersRepository.findById(id);
     }
 
+    public void insertUser(UsersEntity entity) {
+        usersRepository.save(entity);
+    }
+
+    public Iterable<UsersEntity> getAllUsers() {
+        return usersRepository.findAll();
+    }
+
+    public void deleteUserById(Long id) {
+        usersRepository.deleteById(id);
+    }
+
+    public void deleteAllUsers() {
+        usersRepository.deleteAll();
+    }
 }

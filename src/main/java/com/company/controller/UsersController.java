@@ -27,4 +27,20 @@ public class UsersController {
     public Optional<UsersEntity> findById(@PathVariable("id") long id) {
         return userService.findById(id);
     }
+
+    public void insertUser(UsersEntity entity) {
+        userService.insertUser(entity);
+    }
+
+    public Iterable<UsersEntity> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
+    public void deleteUserById(Long id) {
+        userService.deleteUserById(id);
+    }
+
+    public void deleteAllUsers() {
+        userService.deleteAllUsers();
+    }
 }

@@ -1,7 +1,10 @@
 package com.company.service;
 
+import com.company.entity.PostsEntity;
 import com.company.repository.PostsRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class PostService {
@@ -14,5 +17,9 @@ public class PostService {
 
     public PostsRepository getPostsRepository() {
         return postsRepository;
+    }
+
+    public Optional<PostsEntity> findById(Long id) {
+        return postsRepository.findById(id);
     }
 }
